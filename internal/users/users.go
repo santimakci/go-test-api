@@ -44,6 +44,7 @@ func seedUsersExample(
 		w.WriteHeader(http.StatusInternalServerError)
 		response := map[string]interface{}{"status": http.StatusInternalServerError, "message": "Users already seeded"}
 		json.NewEncoder(w).Encode(response)
+		return
 	}
 
 	users := []models.User{

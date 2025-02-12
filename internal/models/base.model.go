@@ -25,3 +25,9 @@ func (b *Base) GoString() string {
 }
 `
 }
+
+// This functions are called before creating Base
+func (base *Base) BeforeCreate(tx *gorm.DB) (err error) {
+	base.ID = uuid.New()
+	return
+}

@@ -10,3 +10,11 @@ DB_PASSWORD=101547
 
 
 con ```go run .``` parado en  ```cmd/api-test``` levanta el proyecto
+
+
+
+### Seed
+
+- Con el endpoint ```/seed-users``` se generar dos usuarios base de ejemplo solo la primera vez
+- Con el endpoint ```/users``` se listan todos
+- Con el endpoint ```/users/{id}``` se trae by id
